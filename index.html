@@ -7,142 +7,100 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="all-tasks">
-        <h2 class="task-list-title">My Lists</h2>
-        <ul class="task-list">
-            <li class="active-list">School Work</li>
-            <li>Work</li>
-            <li>Coding</li>
-        </ul>
+    <div class="main-content">
+        <div class="side-nav">
+            <div class="all-tasks">
+                <h2 class="task-list-title">My Lists</h2>
+                <ul class="task-list">
+                    <li class="active-list">School Work</li>
+                    <li>Work</li>
+                    <li>Coding</li>
+                </ul>
 
-        <form action="">
-            <input 
-            type="text"
-            class="new list"
-            placeholder="new list name"
-            aria-label="new list name"
-            >
-            <button class="btn list" aria-label="create new list">+</button>
-        </form>
-    </div>
-
-    <div class="todo-list">
-        <div class="to-header">
-            <h2 class="list-title">Youtube</h2>
-            <p class="task-count">3 tasks remaining</p>
-        </div>
-
-        <div class="todo-body">
-            <div class="tasks">
-
-                <!--Task 1-->
-                <div class="task">
-                    <input 
-                     type="checkbox" 
-                     id="task-1"
-                    >
-                    <label for="task-1">
-                        <span class="custom-checkbox"></span>
-                        make a todo list chrome extension
-                    </label>
-                </div>
-
-                <!--Task 2-->
-                <div class="task">
-                    <input 
-                     type="checkbox" 
-                     id="task-2"
-                    >
-                    <label for="task-2">
-                        <span class="custom-checkbox"></span>
-                        cool beans
-                    </label>
-                </div>
-
-                <!--Task 3-->
-                <div class="task">
-                    <input 
-                     type="checkbox" 
-                     id="task-3"
-                    >
-                    <label for="task-3">
-                        <span class="custom-checkbox"></span>
-                        do home work
-                    </label>
-                </div>
-
-
-            </div>
-            <div class="new-task-creator">
                 <form action="">
                     <input 
                     type="text"
                     class="new list"
-                    placeholder="new task name"
-                    aria-label="new task name"
+                    placeholder="new list name"
+                    aria-label="new list name"
                     >
-                    <button class="btn task" aria-label="create new list">+</button>
+                    <button class="btn list" aria-label="create new list">+</button>
                 </form>
             </div>
-            <div class="delete-stuff">
-                <button class="btn delete">Clear Completed Tasks</button>
-                <button class="btn delete">Delete List</button>
+        </div>
+        <div class="content-body">
+            <div class="header-nav">
+                <img src="images/swot-logo.png" alt="SWOT" class="header-logo">
+            </div>
+            <div class="progress-bar"></div>
+            <div class="todo-list-container">
+                <div class="todo-list">
+                    <div class="to-header">
+                        <h2 class="list-title">Youtube</h2>
+                        <p class="task-count">3 tasks remaining</p>
+                    </div>
+
+                    <div class="todo-body">
+                        <div class="tasks">
+
+                            <!--Task 1-->
+                            <div class="task">
+                                <input 
+                                type="checkbox" 
+                                id="task-1"
+                                >
+                                <label for="task-1">
+                                    <span class="custom-checkbox"></span>
+                                    make a todo list chrome extension
+                                </label>
+                            </div>
+
+                            <!--Task 2-->
+                            <div class="task">
+                                <input 
+                                type="checkbox" 
+                                id="task-2"
+                                >
+                                <label for="task-2">
+                                    <span class="custom-checkbox"></span>
+                                    cool beans
+                                </label>
+                            </div>
+
+                            <!--Task 3-->
+                            <div class="task">
+                                <input 
+                                type="checkbox" 
+                                id="task-3"
+                                >
+                                <label for="task-3">
+                                    <span class="custom-checkbox"></span>
+                                    do home work
+                                </label>
+                            </div>
+
+
+                        </div>
+                        <div class="new-task-creator">
+                            <form action="">
+                                <input 
+                                type="text"
+                                class="new list"
+                                placeholder="new task name"
+                                aria-label="new task name"
+                                >
+                                <button class="btn task" aria-label="create new list">+</button>
+                            </form>
+                        </div>
+                        <div class="delete-stuff">
+                            <button class="btn delete">Clear Completed Tasks</button>
+                            <button class="btn delete">Delete List</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--<div class="swot-flashcards">
-        <div class="header">
-            <img src="swot-logo.png" alt="swot" class="header-logo">
-        </div>
-        <div class="progressBar"></div>
-        <div class="breadcrums">
-            <h3 class="breadcrums-text">Physic > These are breadcrums</h3>
-        </div>
-        <div class="body">
-            <h1 class="question">Q: What is the power house of the cell?</h1>
-            <h1 class="answer">A: [...]</h1>
-            <div class="notes">
-                <h1 class="notes-heading">Notes:</h1> 
-                <p class="notes-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, magni corporis sunt, excepturi doloremque animi laboriosam eos sed saepe quis provident voluptates iusto quas omnis id? Aspernatur suscipit earum consequatur perferendis a fugit et impedit qui numquam quibusdam magni unde incidunt ullam doloribus, deleniti corporis. Iste, minima. Odio, quas esse!</p>
-                <img src="swot-logo.png" alt="" class="notes-img">
-            </div>
-        </div>
-        <div class="footer">
-            <P class="showAnswer">Show Answer</P>
-        </div>
-        <div class="footer2">
-            <button class="hard"> 
-                <div class="hard-icon">
-                    <img src="happy-face.png" alt="" class="sad-face"> 
-                </div>
-                <div class="hard-text">Easy</div>
-            </button>
-            <button class="hard">
-                <div class="hard-icon">
-                    <img src="med-face.png" alt="" class="sad-face"> 
-                </div>
-                <div class="hard-text">Medium</div>
-            </button>
-            <button class="hard">
-                <div class="hard-icon">
-                    <img src="sad-face.png" alt="" class="sad-face"> 
-                </div>
-                <div class="hard-text">Hard</div>
-            </button>
-        </div>
-    </div> -->
     <script src="index.js"></script>
 </body>
 </html>

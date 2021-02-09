@@ -4,10 +4,10 @@
     "version": "0.1.0",
     "manifest_version": 2,
     "icons":{
-        "16": "swot-logo.png",
-        "32": "swot-logo.png",
-        "48": "swot-logo.png",
-        "128": "swot-logo.png"
+        "16": "images/swot-logo.png",
+        "32": "images/swot-logo.png",
+        "48": "images/swot-logo.png",
+        "128": "images/swot-logo.png"
     },
     "background": {
         "scripts": ["background.js"]
