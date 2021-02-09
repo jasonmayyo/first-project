@@ -6,6 +6,9 @@ Dark Theme:
 #202125 - lightest
 #16171B - darkest
 #00FFD1 - 8% primary
+
+Fonts:
+font-family: 'Montserrat', sans-serif;
 */
 
 
@@ -82,12 +85,73 @@ html, body{
 .todo-list{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     width: 700px;
     height: 80%;   
     background-color: #202125; 
     border-radius: 15px;
     color: white;
 }
+
+.todo-header{
+    display: flex;
+    background-color: #2F3034;
+    align-items: center;
+    height: 70px;
+}
+
+.list-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    flex-basis: 80%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.task-count{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: #00FFD1;
+    border-radius: 5px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    font-weight:900;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.tasks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.task{
+    margin-top: 15px;
+    width: 90%;
+    background-color: #2F3034;
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
+
+.delete-stuff{
+    border: 1px solid red;
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+
+
 
 
 
