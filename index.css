@@ -121,14 +121,17 @@ html, body{
     font-family: 'Montserrat', sans-serif;
     
 }
+.todo-body{
+    height: 100%;
+}
 .tasks{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex: 1 0 auto;
+    height: calc(100% - 30px);
 }
 
-.task{
+
+.container{
     margin-top: 15px;
     width: 90%;
     background-color: #2F3034;
@@ -137,17 +140,72 @@ html, body{
     display: flex;
     align-items: center;
     padding-left: 20px;
-
+    align-self: center;
 
     font-family: 'Montserrat', sans-serif;
     font-size: small;
 }
+.creator{
+    margin-top: 15px;
+    width: 90%;
+    background-color: #2F3034;
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    align-self: center;
 
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
+form{
+    display: flex;
+}
+.new{
+    background-color: transparent;
+    border: 0;
+    color: inherit;
+    border-bottom: 1px solid currentColor;
+    font-size: inherit;
+    outline: none;
+    order: 2;
+
+    transition: border-bottom 5s ease-in-out;
+}
+.new:focus{
+    border-bottom-width: 2px;
+}
+.new:focus::placeholder{
+    opacity: 0.4;
+}
 .delete-stuff{
-    border: 1px solid red;
     width: 100%;
     height: 50px;
     display: flex;
+    justify-content: space-evenly;
+}
+.btn-task{
+    cursor: pointer;
+    background: 0;
+    border: 0;
+    padding: 0;
+    color: inherit;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+.btn-task:hover{
+    opacity: 0.7;
+}
+
+.btn{
+    height: 20px;
+    background-color: #202125;
+    border: none;
+    color: #3a3b3f;
+}
+.btn:hover{
+    cursor: pointer;
 }
 
 
