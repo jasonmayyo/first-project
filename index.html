@@ -11,12 +11,21 @@
 <body>
     <div class="main-content">
         <div class="side-nav">
+            <div class="profile">
+                <div class="profile-img-contanter">
+                    <img src="images/IMG-1579.JPG" class="profile-img" alt="">
+                </div>
+                <div class="profile-info">
+                    <h2 class="profile-name">Jason Mayo</h2> 
+                    <p class="profile-msg">Just Do It!</p>
+                </div>
+            </div>
             <div class="all-tasks">
                 <h2 class="task-list-title">My Lists</h2>
                 <ul class="task-list">
-                    <li class="active-list">School Work</li>
-                    <li>Work</li>
-                    <li>Coding</li>
+                    <li class="active-list task-container">School Work</li>
+                    <li class="task-container">Work</li>
+                    <li class="task-container">Coding</li>
                 </ul>
 
                 <form action="">
@@ -26,7 +35,7 @@
                     placeholder="new list name"
                     aria-label="new list name"
                     >
-                    <button class="btn-list" aria-label="create new list">+</button>
+                    <button class="btn-task" aria-label="create new list"><img src="images/plus-img.png"  class="plus-img"alt=""></button>
                 </form>
             </div>
         </div>
@@ -84,11 +93,13 @@
                                 <form action="">
                                     <input 
                                     type="text"
-                                    class="new task"
-                                    placeholder="new task name"
-                                    aria-label="new task name"
+                                    class="new list"
+                                    placeholder="new list name"
+                                    aria-label="new list name"
                                     >
-                                    <button class="btn-task" aria-label="create new list">+</button>
+                                    <button class="btn-task" aria-label="create new list">
+                                        <img src="images/plus-img.png"  class="plus-img"alt="">
+                                    </button>
                                 </form>
                             </div>
                         </div>

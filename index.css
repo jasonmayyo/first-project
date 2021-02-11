@@ -22,10 +22,12 @@ html, body{
 }
 .side-nav{
     display: flex;
+    flex-direction: column;
     flex-basis: 20%;
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #202125;
 }
 .header-nav{
     display: flex;
@@ -52,6 +54,47 @@ html, body{
     flex-direction: row;
  
  }
+ .profile{
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #16171B;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+ }
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    height: 70px;
+    justify-content: center;
+}
+.profile-img-contanter{
+    display: flex;
+    flex-basis: 30%;
+    align-items: center;
+    justify-content: center;
+}
+ .profile-img{
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     border: 2px solid #00FFD1;
+ }
+ .profile-name{
+     color: white;
+     margin: 0;
+     padding: 0;
+     padding-left: 5px;
+     font-family: 'Montserrat', sans-serif;
+ }
+ .profile-msg{
+     color: rgba(255, 255, 255, 0.63);
+     margin: 0;
+     padding: 0;
+     padding-left: 5px;
+     font-family: 'Montserrat', sans-serif;
+ }
 
 .main-content{
     display: flex;
@@ -72,7 +115,49 @@ html, body{
     height: 100%;
     background-color: #202125;
     color: white;
+    margin-right: 20px;
+    margin-left: 20px;
 }
+.task-list-title{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}​
+.task-list{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    border: 1px solid red;
+}
+
+.task-container{
+    display: flex;
+    align-items: center;
+    background-color: #2F3034;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.task-container:hover{
+    cursor: pointer;
+}
+.active-list{
+    font-weight: 800;
+}
+
+
 .todo-list-container{
     height: calc(100% - 43px);
     width: 100%;
@@ -109,11 +194,11 @@ html, body{
 }
 .task-count{
     display: flex;
-    width: 20px;
-    height: 20px;
-    background-color: #00FFD1;
-    border-radius: 5px;
-    color: black;
+    width: 40px;
+    height: 40px;
+    background-color: #00ffd05d;
+    border-radius: 50%;
+    color: white;
     align-items: center;
     justify-content: center;
     font-size: medium;
@@ -167,11 +252,11 @@ form{
     border: 0;
     color: inherit;
     border-bottom: 1px solid currentColor;
-    font-size: inherit;
+    font-size: small;
     outline: none;
     order: 2;
+    padding: 5px;
 
-    transition: border-bottom 5s ease-in-out;
 }
 .new:focus{
     border-bottom-width: 2px;
@@ -190,12 +275,14 @@ form{
     background: 0;
     border: 0;
     padding: 0;
-    color: inherit;
-    font-size: 2rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 .btn-task:hover{
-    opacity: 0.7;
+    opacity: 0.5;
+}
+.plus-img{
+    width: 15px;
+    height: 15px;
 }
 
 .btn{
@@ -203,9 +290,11 @@ form{
     background-color: #202125;
     border: none;
     color: #3a3b3f;
+    outline: none;
 }
 .btn:hover{
     cursor: pointer;
+    color: white;
 }
 
 
