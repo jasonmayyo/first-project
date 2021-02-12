@@ -264,6 +264,29 @@ form{
 .new:focus::placeholder{
     opacity: 0.4;
 }
+.task-input-container{
+    display: flex;
+}
+.task-label-container{
+    display: flex;
+}
+[type="checkbox"]{
+    opacity: 0;
+    position: absolute;
+}
+.custom-checkbox {
+    display: flex;
+    width: 0.75rem;
+    height: 0.75rem;
+    cursor: pointer;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+
 .delete-stuff{
     width: 100%;
     height: 50px;
