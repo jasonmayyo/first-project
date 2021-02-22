@@ -132,12 +132,13 @@ html, body{
 ul {
     list-style: none;
     padding-left: 0;
+    margin: 0;
 }​
 .task-list{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     list-style-type: none;
-    border: 1px solid red;
+    margin: 0;
 }
 .task-container-new-list{
     display: flex;
@@ -223,24 +224,22 @@ ul {
     align-items: center;
     justify-content: center;
     font-size: medium;
-    font-weight:900;
+    font-weight:800;
     font-family: 'Montserrat', sans-serif;
     
 }
 .todo-body{
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
+
 .tasks{
     display: flex;
     flex-direction: column;
-    height: calc(100% - 30px);
+    align-items: center;
 }
-.task:hover{
-    cursor: pointer;
-}
-
-
-
 .container{
     margin-top: 15px;
     width: 90%;
@@ -250,7 +249,8 @@ ul {
     display: flex;
     align-items: center;
     padding-left: 20px;
-    align-self: center;
+    flex-shrink: 0;
+    
 
     font-family: 'Montserrat', sans-serif;
     font-size: small;
@@ -265,6 +265,7 @@ ul {
     align-items: center;
     padding-left: 20px;
     align-self: center;
+    
 
     font-family: 'Montserrat', sans-serif;
     font-size: small;
@@ -352,6 +353,9 @@ label:hover{
     height: 50px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
 }
 .btn-task{
     cursor: pointer;
